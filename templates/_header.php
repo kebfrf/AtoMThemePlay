@@ -19,49 +19,12 @@
 
   <div class="container">
 
-    <div id="header-lvl1">
-      <div class="row">
-        <div class="span12">
-
-          
-            <a id="header-council" href="http://grainger.unimelb.edu.au"><?php echo image_tag('/plugins/arArchivesCanadaPlugin/images/council.en.png', array('width' => '156', 'height' => '42', 'alt' => __('Canadian Council of Archives'))) ?></a>
-   
-
-          <ul id="header-nav" class="nav nav-pills">
-
-         
-              <li><?php echo link_to(__('Home'), array('module' => 'staticpage', 'slug' => 'index.php')) ?></li>
-           
-
-        
-              <li><?php echo link_to(__('Contact us'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
-         
-            <?php foreach (array('en', 'fr') as $item): ?>
-              <?php if ($sf_user->getCulture() != $item): ?>
-                <li><?php echo link_to(format_language($item, $item), array('sf_culture' => $item) + $sf_data->getRaw('sf_request')->getParameterHolder()->getAll()) ?></li>
-                <?php break; ?>
-              <?php endif; ?>
-            <?php endforeach; ?>
-
-            <?php if (!$sf_user->isAuthenticated()): ?>
-              <li><?php echo link_to(__('Log in'), array('module' => 'user', 'action' => 'login')) ?></li>
-            <?php endif; ?>
-
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
     <div id="header-lvl2">
       <div class="row">
 
         <div id="logo-and-name" class="span6">
-          <?php if ('fr' == $sf_user->getCulture()): ?>
-            <h1><?php echo link_to(image_tag('/plugins/arArchivesCanadaPlugin/images/logo.png', array('alt' => __('Archives Canada'))), 'http://archivescanada.ca/homeFR', array('rel' => 'home')) ?></h1>
-          <?php else: ?>
-            <h1><?php echo link_to(image_tag('/plugins/arArchivesCanadaPlugin/images/logo.png', array('alt' => __('Archives Canada'))), 'http://archivescanada.ca', array('rel' => 'home')) ?></h1>
-          <?php endif; ?>
+            <h1><?php echo link_to(image_tag('/plugins/arGraingerPlugin/images/graingerlogo.png', array('alt' => __('Grainger Museum Archive'))), 'http://10.100.148.228', array('rel' => 'home')) ?></h1>
+          
         </div>
 
         <div id="header-search" class="span6">
