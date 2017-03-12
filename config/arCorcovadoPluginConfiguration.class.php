@@ -3,7 +3,7 @@
    class arCorcovadoPluginConfiguration extends sfPluginConfiguration
    {
      public static
-       $summary = 'Theme plugin, extension of arDominionPlugin.',
+       $summary = 'Grainger theme plugin, extension of arDominionPlugin.',
        $version = '0.0.1';
 
      public function contextLoadFactories(sfEvent $event)
