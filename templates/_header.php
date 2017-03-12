@@ -1,21 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @kebfrf
- Sign out
- Watch 30
-  Star 63
-  Fork 51 artefactual/atom
- Code  Issues 0  Pull requests 3  Projects 0  Pulse  Graphs
-Tree: c1a656e04c Find file Copy pathatom/apps/qubit/templates/_header.php
-c1a656e  15 days ago
-@mcantelon mcantelon Warning translation and CSS fixes, refs #10473
-3 contributors @sevein @jraddaoui @mcantelon
-RawBlameHistory     
-60 lines (41 sloc)  1.82 KB
+<?php echo get_component_slot('header') ?>
 <?php echo get_component('default', 'updateCheck') ?>
 
 <?php if ($sf_user->isAdministrator() && (string)QubitSetting::getByName('siteBaseUrl') === ''): ?>
