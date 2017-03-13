@@ -25,10 +25,12 @@
 
 @topBarBackgroundColor: #0c304a;
 @topBarButtonHoverColor: #0076de;
-
+@bluebuttoncolor: #004576
+  
 #top-bar {
   height: 50px;
   background-color: @topBarBackgroundColor;
+  padding-top: 50px;
 }
 
 header #logo {
@@ -64,7 +66,7 @@ header #logo {
   display: block;
   float: right;
   margin: 12px 11px 0 0;
-  background-color: @grayDark;
+  background-color: @bluebuttoncolor;
   .border-radius(4px);
   font-size: 13px;
   line-height: 14px;
@@ -150,7 +152,7 @@ nav > div {
 
   .top-dropdown-body {
 
-    background-color: @graySilver;
+    background-color: @white;
     background-color: rgba(255, 255, 255, 0.95);
     font-size: 14px;
     .clearfix();
@@ -194,7 +196,7 @@ nav > div {
   float: left;
   > button {
     .border-radius(4px);
-    background-color: lighten(@grayDark, 5%);
+    background-color: @bluebuttoncolor;
   }
 }
 
@@ -235,6 +237,7 @@ nav > div {
 
   > button {
     .border-radius(0);
+    background-color: rgba(0,0,0,.05);
   }
 
   // Cancel margin and padding
@@ -257,7 +260,7 @@ nav > div {
     font-weight: normal;
     font-style: normal;
     text-align: center;
-    color: @grayLighter;
+    color: @white;
     font-size: @side/2;
     position: absolute;
     top: 0;
@@ -377,7 +380,7 @@ nav > div {
     border: none;
 
     // See .top-item
-    background-color: @grayDark;
+    background-color: #ffffff;
     .border-radius(4px);
     color: lighten(@gray, 40%);
 
@@ -393,7 +396,7 @@ nav > div {
     height: 25px;
 
     &:focus {
-      background-color: @graySilver;
+      background-color: @white;
       color: @gray;
       .placeholder(@grayLight);
     }
@@ -407,7 +410,7 @@ nav > div {
     right: 0px;
     position: absolute;
     top: 0px;
-    background-color: #666;
+    background-color: #005bab;
     color: white;
     margin-top: 0px;
     font-size: 1.1em;
