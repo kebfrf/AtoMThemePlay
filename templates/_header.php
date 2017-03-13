@@ -10,7 +10,8 @@
 <header id="top-bar">
 
   <?php if (sfConfig::get('app_toggleLogo')): ?>
-    <h1><?php echo link_to(image_tag('/plugins/arGraingerPlugin/images/logo.png', array('alt' => __('Grainger Museum Archive'))), 'http://10.100.148.228', array('rel' => 'home')) ?></h1>
+    <h1><?php echo link_to(image_tag('/plugins/arGraingerPlugin/images/unimelb.png', array('alt' => __('University of Melbourne'))), 'http://www.unimelb.edu.au', array('rel' => 'external')) ?>
+      <?php echo link_to(image_tag('/plugins/arGraingerPlugin/images/logo.png', array('alt' => __('Grainger Museum Archive'))), 'http://10.100.148.228', array('rel' => 'home')) ?></h1>
           
   <?php endif; ?>
 
