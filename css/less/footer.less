@@ -1,8 +1,98 @@
 .footer {
 width: 100%;
-height: 200px;
+height: 100px;
 position: absolute;
 bottom: 0;
 background-colour: #0c304a;
 color: @white;
+}
+
+#external-links {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+    
+// Icons
+
+#facebook,
+#museum,
+#instagram,
+#twitter,
+ {
+
+  @side: 50px;
+
+  // As text is hidden
+  cursor: pointer;
+
+  > a {
+    .border-radius(0);
+    background-color: rgba(0,0,0,.05);
+  }
+
+  // Cancel margin and padding
+  > a,
+  > a:before {
+    margin: 0;
+    padding: 0;
+    line-height: @side;
+    .square(@side);
+  }
+
+  > a {
+    .hide-text();
+    position: relative;
+  }
+
+  // Icons
+  > a:before {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: @white;
+    font-size: @side/2;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // Hover effect
+  ,
+  > a:hover,
+  > a:focus {
+    background-color: #0076de;
+  }
+
+  
+
+}
+
+// Font-Awesome icons
+
+#facebook  {
+  > a:before {
+    content: "\f230";
+  }
+}
+
+#museum {
+  > a:before {
+    content: "\f19c";
+  }
+}
+
+#isntagram {
+  > a:before {
+    content: "\f16d";
+  }
+}
+
+#twitter {
+  > a:before {
+    content: "\f099";
+  }
 }
