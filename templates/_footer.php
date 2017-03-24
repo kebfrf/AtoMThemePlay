@@ -6,6 +6,15 @@
 
   <?php echo get_component_slot('footer') ?>
 
+  <ul id="external-links">
+    <li id="museum"><?php echo link_to('alt' => __('Grainger Museum'))), 'http://grainger.unimelb.edu.au', array('rel' => 'external')) ?>Grainger Museum Website</li>
+    <li id="facebook"><?php echo link_to('alt' => __('Facebook'))), 'http://facebook.com/graingermuseum', array('rel' => 'external')) ?>Facebook</li>
+    <li id="instagram"><?php echo link_to('alt' => __('Instagram'))), 'http://instagram.com/graingermuseum', array('rel' => 'external')) ?>Instagram</li>
+    <li id="twitter"><?php echo link_to('alt' => __('Twitter'))), 'http://twitter.com/graingermuseum', array('rel' => 'external')) ?>Twitter</li>
+  </ul>
+  <p> Powered by AToM </p>
+  
+    
   <div id="print-date">
     <?php echo __('Printed: %d%', array('%d%' => date('Y-m-d'))) ?>
   </div>
